@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://bimipv66citkb"]
+
+[ext_resource type="Texture2D" uid="uid://dd8u3p5avr88b" path="res://assets/Bear/Bear-Ball-Sprites-Sheet.png" id="1_a3xf0"]
+[ext_resource type="Script" uid="uid://cxtidhwmm6mb4" path="res://scripts/bear.gd" id="1_aquv5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aquv5"]
+atlas = ExtResource("1_a3xf0")
+region = Rect2(240, 1040, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0uag"]
+atlas = ExtResource("1_a3xf0")
+region = Rect2(160, 1040, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5djg"]
+atlas = ExtResource("1_a3xf0")
+region = Rect2(80, 1040, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7gg4"]
+atlas = ExtResource("1_a3xf0")
+region = Rect2(0, 1040, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4uyl"]
+atlas = ExtResource("1_a3xf0")
+region = Rect2(240, 960, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0f2y1"]
+atlas = ExtResource("1_a3xf0")
+region = Rect2(160, 960, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5084r"]
+atlas = ExtResource("1_a3xf0")
+region = Rect2(80, 960, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x34g0"]
+atlas = ExtResource("1_a3xf0")
+region = Rect2(0, 960, 80, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cm6re"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aquv5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0uag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5djg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h7gg4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r4uyl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0f2y1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5084r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x34g0")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 16.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iwa67"]
+radius = 10.999829
+height = 28.010733
+
+[node name="Bear" type="CharacterBody2D" unique_id=614157028]
+script = ExtResource("1_aquv5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1714540321]
+position = Vector2(0, -12)
+sprite_frames = SubResource("SpriteFrames_cm6re")
+animation = &"Run"
+autoplay = "Run"
+frame_progress = 0.087069206
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=815842730]
+position = Vector2(1.0000001, -11)
+rotation = 1.5652127
+shape = SubResource("CapsuleShape2D_iwa67")
