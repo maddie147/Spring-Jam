@@ -16,6 +16,7 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 boot_splash/bg_color=Color(0.24674082, 0.33849424, 0.43505076, 1)
 config/icon="res://icon.svg"
 
+<<<<<<< HEAD
 [display]
 
 window/size/viewport_width=960
@@ -23,6 +24,19 @@ window/size/viewport_height=540
 window/size/window_width_override=1200
 window/size/window_height_override=896
 window/stretch/mode="viewport"
+=======
+[autoload]
+
+InteractionManager="*uid://uo1v0xqbkop5"
+
+[input]
+
+interact={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"key_label":0,"unicode":101,"location":0,"echo":false,"script":null)
+]
+}
+>>>>>>> d7b5a12e91e7e8a3b504149167569e623ec65a06
 
 [physics]
 

@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://yq32he18hyfi"]
+
+[ext_resource type="Texture2D" uid="uid://bn0fhymx7x5rq" path="res://assets/Trees/Premium_Trees_Black_Outline.png" id="1_457b8"]
+[ext_resource type="Texture2D" uid="uid://b5cl8nnaa5b57" path="res://assets/Trees/PixelFloraLarge64x64.png" id="2_rdfjx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c842s"]
+atlas = ExtResource("1_457b8")
+region = Rect2(288, 138, 32, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfva0"]
+atlas = ExtResource("1_457b8")
+region = Rect2(320, 138, 32, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilim5"]
+atlas = ExtResource("1_457b8")
+region = Rect2(352, 140, 32, 70)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k5g57"]
+atlas = ExtResource("2_rdfjx")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mq56f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c842s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfva0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilim5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k5g57")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="TreeLadder" type="Area2D" unique_id=1186870963]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=811702665]
+position = Vector2(0, -32)
+sprite_frames = SubResource("SpriteFrames_mq56f")
+frame = 3
+frame_progress = 0.20003383
