@@ -29,7 +29,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rqhtc"]
 size = Vector2(22, 29)
 
-[node name="flower" type="Area2D" unique_id=1223832418 groups=["bear"]]
+[node name="Flower" type="Area2D" unique_id=1223832418 groups=["bear"]]
 script = ExtResource("1_agc10")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1134816968]
