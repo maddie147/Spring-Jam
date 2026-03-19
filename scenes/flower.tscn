@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cdivyqffvj5t7"]
+
+[ext_resource type="Script" uid="uid://q1pxqjeoj8et" path="res://scripts/flower.gd" id="1_agc10"]
+[ext_resource type="Texture2D" uid="uid://dkiq7rfb2hchq" path="res://assets/Flowers/Flowers_Without_Outline_Spritesheet.png" id="1_yoh7s"]
+[ext_resource type="PackedScene" uid="uid://dmxn4i8rel03k" path="res://interaction/interaction area/interaction_area.tscn" id="3_agc10"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqhtc"]
+atlas = ExtResource("1_yoh7s")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ym8cu"]
+atlas = ExtResource("1_yoh7s")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1ahwj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rqhtc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ym8cu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rqhtc"]
+size = Vector2(22, 29)
+
+[node name="flower" type="Area2D" unique_id=1223832418 groups=["bear"]]
+script = ExtResource("1_agc10")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1134816968]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_1ahwj")
+frame_progress = 0.9998884
+
+[node name="InteractionArea" parent="." unique_id=809040959 instance=ExtResource("3_agc10")]
+action_name = "water"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=434452022]
+position = Vector2(-1, -14.5)
+shape = SubResource("RectangleShape2D_rqhtc")

@@ -72,6 +72,8 @@ radius = 10.999829
 height = 28.010733
 
 [node name="Bear" type="CharacterBody2D" unique_id=614157028]
+z_index = 5
+collision_layer = 2
 script = ExtResource("1_aquv5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1714540321]
