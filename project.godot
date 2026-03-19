@@ -11,10 +11,18 @@ config_version=5
 [application]
 
 config/name="Spring Jam"
-run/main_scene="uid://dydqrx0uyf83v"
+run/main_scene="uid://b636pt3knvmda"
 config/features=PackedStringArray("4.6", "Forward Plus")
 boot_splash/bg_color=Color(0.24674082, 0.33849424, 0.43505076, 1)
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/size/window_width_override=1200
+window/size/window_height_override=896
+window/stretch/mode="viewport"
 
 [physics]
 
@@ -24,3 +32,4 @@ config/icon="res://icon.svg"
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
+environment/defaults/default_clear_color=Color(0.34117648, 0.72156864, 0.98039216, 1)

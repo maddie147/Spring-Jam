@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dbuh7e1q4rk5b"]
+
+[ext_resource type="Texture2D" uid="uid://cbalpxxyi0i4v" path="res://assets/Levels/Level_1/clouds_bg.png" id="1_4dvvg"]
+[ext_resource type="Texture2D" uid="uid://cwdo3xwqq6trc" path="res://assets/Levels/Level_1/glacial_mountains_lightened.png" id="2_rnjyy"]
+
+[node name="Node2D" type="Node2D" unique_id=268545453]
+
+[node name="TileMap" type="TileMap" parent="." unique_id=1405346779]
+format = 2
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1554777387]
+
+[node name="Parallax2D" type="Parallax2D" parent="ParallaxBackground" unique_id=739091137]
+scroll_offset = Vector2(0, -54)
+repeat_size = Vector2(384, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Parallax2D" unique_id=1997214384]
+texture = ExtResource("1_4dvvg")
+
+[node name="Parallax2D2" type="Parallax2D" parent="ParallaxBackground" unique_id=691807557]
+scroll_offset = Vector2(0, -54)
+repeat_size = Vector2(380, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Parallax2D2" unique_id=1618780132]
+texture = ExtResource("2_rnjyy")
+
+[node name="Parallax2D3" type="Parallax2D" parent="ParallaxBackground" unique_id=308521753]
+scroll_offset = Vector2(0, -54)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Parallax2D3" unique_id=59333189]
