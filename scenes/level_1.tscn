@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bimipv66citkb" path="res://scenes/bear.tscn" id="2_wknwv"]
 [ext_resource type="PackedScene" uid="uid://cdivyqffvj5t7" path="res://scenes/flower.tscn" id="3_fxqaj"]
 [ext_resource type="PackedScene" uid="uid://dgj5yaparlemf" path="res://scenes/sky_1.tscn" id="4_5xbjy"]
+[ext_resource type="FontFile" uid="uid://bltj7nwqjvde3" path="res://assets/Fonts/PixelOperator8-Bold.ttf" id="5_fcfvj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d6w1m"]
 texture = ExtResource("1_1tdkx")
@@ -195,6 +196,23 @@ sources/0 = SubResource("TileSetAtlasSource_d6w1m")
 [node name="Node2D" type="Node2D" unique_id=1077115770]
 script = ExtResource("1_4nkto")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1147527196]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1361211411]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -122.0
+offset_top = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(2, 2)
+pivot_offset = Vector2(200, 60)
+theme_override_fonts/font = ExtResource("5_fcfvj")
+text = "Flowers:"
+
 [node name="Sky" parent="." unique_id=728884280 instance=ExtResource("4_5xbjy")]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=260808419]
@@ -214,17 +232,19 @@ limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 2.5
 
-[node name="Flower" parent="." unique_id=1223832418 instance=ExtResource("3_fxqaj")]
+[node name="Flowers" type="Node" parent="." unique_id=1328615828]
+
+[node name="Flower" parent="Flowers" unique_id=1223832418 instance=ExtResource("3_fxqaj")]
 position = Vector2(169, 0)
 
-[node name="Flower2" parent="." unique_id=1601810733 instance=ExtResource("3_fxqaj")]
+[node name="Flower2" parent="Flowers" unique_id=1601810733 instance=ExtResource("3_fxqaj")]
 position = Vector2(241, -1)
 
-[node name="Flower3" parent="." unique_id=444261566 instance=ExtResource("3_fxqaj")]
+[node name="Flower3" parent="Flowers" unique_id=444261566 instance=ExtResource("3_fxqaj")]
 position = Vector2(348, 0)
 
-[node name="Flower4" parent="." unique_id=1345949517 instance=ExtResource("3_fxqaj")]
+[node name="Flower4" parent="Flowers" unique_id=1345949517 instance=ExtResource("3_fxqaj")]
 position = Vector2(471, -64)
 
-[node name="Flower5" parent="." unique_id=2027099439 instance=ExtResource("3_fxqaj")]
+[node name="Flower5" parent="Flowers" unique_id=2027099439 instance=ExtResource("3_fxqaj")]
 position = Vector2(677, -64)
