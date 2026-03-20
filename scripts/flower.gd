@@ -12,6 +12,12 @@ func _ready() -> void:
 
 func _toggle_flower():
 	sprite.frame = 1
+	print("flower watered")
+	GameData.total_flower_count += 1
+	print("Total watered: ", GameData.total_flower_count)
+	remove_child(sprite)
+	get_tree().current_scene.add_child(sprite)
+	sprite.global_position = global_position + Vector2(0, -16)
+	queue_free()
 	#animated_sprite_2d.play("default")
 	#animated_sprite_2d.stop()
-	
