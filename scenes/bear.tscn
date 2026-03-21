@@ -3,41 +3,52 @@
 [ext_resource type="Script" uid="uid://cxtidhwmm6mb4" path="res://scripts/bear.gd" id="1_aquv5"]
 [ext_resource type="Texture2D" uid="uid://c05hfldo3rhk8" path="res://assets/Bear/Bear_Recolor_2.0.png" id="2_aquv5"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_aquv5"]
+atlas = ExtResource("2_aquv5")
+region = Rect2(0, 240, 80, 80)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_v0uag"]
 atlas = ExtResource("2_aquv5")
-region = Rect2(0, 400, 80, 80)
+region = Rect2(80, 240, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a5djg"]
 atlas = ExtResource("2_aquv5")
-region = Rect2(80, 400, 80, 80)
+region = Rect2(160, 240, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h7gg4"]
 atlas = ExtResource("2_aquv5")
-region = Rect2(160, 400, 80, 80)
+region = Rect2(240, 240, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r4uyl"]
 atlas = ExtResource("2_aquv5")
-region = Rect2(240, 400, 80, 80)
+region = Rect2(320, 240, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0f2y1"]
 atlas = ExtResource("2_aquv5")
-region = Rect2(320, 400, 80, 80)
+region = Rect2(400, 240, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5084r"]
 atlas = ExtResource("2_aquv5")
-region = Rect2(400, 400, 80, 80)
+region = Rect2(480, 240, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x34g0"]
 atlas = ExtResource("2_aquv5")
-region = Rect2(480, 400, 80, 80)
+region = Rect2(560, 240, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_052ee"]
 atlas = ExtResource("2_aquv5")
-region = Rect2(560, 400, 80, 80)
+region = Rect2(640, 240, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n5ilv"]
+atlas = ExtResource("2_aquv5")
+region = Rect2(720, 240, 80, 80)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cm6re"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aquv5")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_v0uag")
 }, {
@@ -61,6 +72,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_052ee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n5ilv")
 }],
 "loop": true,
 "name": &"Run",
@@ -81,7 +95,7 @@ position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_cm6re")
 animation = &"Run"
 autoplay = "Run"
-frame_progress = 0.37176356
+frame_progress = 0.1700141
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=815842730]
 position = Vector2(-2.0000005, -4.5474735e-13)
