@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmy5af5pxw8uy"
-path="res://.godot/imported/Level_Tilesheet4.0.png-fcc33a8560eed96071a87155a0b302d8.ctex"
+uid="uid://y8afsbo7kqjd"
+path="res://.godot/imported/Bear_Sprites_4.0.png-a05e4258ea45c764eb508df32a8fb232.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Levels/Level_1/Level_Tilesheet4.0.png"
-dest_files=["res://.godot/imported/Level_Tilesheet4.0.png-fcc33a8560eed96071a87155a0b302d8.ctex"]
+source_file="res://assets/Bear/Bear_Sprites_4.0.png"
+dest_files=["res://.godot/imported/Bear_Sprites_4.0.png-a05e4258ea45c764eb508df32a8fb232.ctex"]
 
 [params]
 
