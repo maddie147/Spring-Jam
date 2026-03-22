@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://g8x42p1jb5nb"]
+
+[ext_resource type="Texture2D" uid="uid://dggw2mqrflqrx" path="res://assets/Levels/Level_1/Watering_can_sprite.png" id="1_a15la"]
+[ext_resource type="Texture2D" uid="uid://dmy5af5pxw8uy" path="res://assets/Levels/Level_1/Level_Tilesheet4.0.png" id="2_cca2k"]
+
+[node name="Node2D" type="Node2D" unique_id=1459382387]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1795151976]
+texture = ExtResource("1_a15la")
+region_enabled = true
+region_rect = Rect2(7.1032944, 0, 34.029274, 32.2077)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=834156417]
+position = Vector2(-1, -12)
+texture = ExtResource("2_cca2k")
+region_enabled = true
+region_rect = Rect2(208.01558, 149.60666, 14.483215, 31.863068)
