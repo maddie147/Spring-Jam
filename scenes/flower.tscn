@@ -37,7 +37,7 @@ position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_1ahwj")
 frame_progress = 0.4165547
 
-[node name="InteractionArea" parent="." unique_id=809040959 instance=ExtResource("3_agc10")]
+[node name="InteractionArea" parent="." unique_id=809040959 groups=["flower"] instance=ExtResource("3_agc10")]
 action_name = "water"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=434452022]

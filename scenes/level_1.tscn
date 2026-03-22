@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b6wpbewbnhmv8" path="res://scripts/level_1.gd" id="1_4nkto"]
 [ext_resource type="Texture2D" uid="uid://bbgti280m4egm" path="res://assets/Levels/Level_1/Level_Tilesheet4.0.png" id="2_fcfvj"]
 [ext_resource type="PackedScene" uid="uid://bimipv66citkb" path="res://scenes/bear.tscn" id="2_wknwv"]
+[ext_resource type="Script" uid="uid://cytdwlvrf64gp" path="res://scripts/flower_counter_label.gd" id="3_15mv3"]
 [ext_resource type="PackedScene" uid="uid://cdivyqffvj5t7" path="res://scenes/flower.tscn" id="3_fxqaj"]
 [ext_resource type="Texture2D" uid="uid://edkys2pk0l3j" path="res://assets/Trees/Trees_3.0.png" id="3_pa8r4"]
 [ext_resource type="PackedScene" uid="uid://dgj5yaparlemf" path="res://scenes/sky_1.tscn" id="4_5xbjy"]
@@ -481,7 +482,7 @@ script = ExtResource("1_4nkto")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1147527196]
 
-[node name="Label" type="Label" parent="CanvasLayer" unique_id=1361211411]
+[node name="Flower_Counter_Label" type="Label" parent="CanvasLayer" unique_id=1361211411]
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
@@ -495,6 +496,7 @@ scale = Vector2(2, 2)
 pivot_offset = Vector2(200, 60)
 theme_override_fonts/font = ExtResource("5_fcfvj")
 text = "Flowers:"
+script = ExtResource("3_15mv3")
 
 [node name="MAIN LEVEL" type="TileMap" parent="." unique_id=260808419]
 tile_set = SubResource("TileSet_15mv3")
